@@ -4,11 +4,11 @@ Redshift_datasets:
   outputs:
     dev:
       type: redshift
-      host: redshift-cluster-4.c6tbdiz2ayz2.us-east-1.redshift.amazonaws.com
-      port: 5439
-      dbname: dev
-      schema: public
-      user: awsuser
-      password: Awsuser@123
-      region: us-east-1
+      host: your_host_url
+      port: your_port_number
+      dbname: your_database_name
+      schema: your_schema_name
+      user: your_username
+      password: your_password
+      region: your_region
       threads: 4
