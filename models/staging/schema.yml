@@ -1,0 +1,67 @@
+
+version: 2
+
+models:
+  - name: stg_category
+    description: "Staging model for category table"
+    columns:
+      - name: cat_id
+        description: "Primary key of the category"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_date
+    description: "Staging model for date table"
+    columns:
+      - name: date_id
+        description: "Primary key of the date"
+        tests:
+          - not_null
+          - unique
+    
+  - name: stg_event
+    description: "Staging model for event table"
+    columns:
+      - name: event_id
+        description: "Primary key of the event"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_listing
+    description: "Staging model for listing table"
+    columns:
+      - name: list_id
+        description: "Primary key of the listing"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sales
+    description: "Staging model for sales table"
+    columns:
+      - name: sales_id
+        description: "Primary key of the sales"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_users
+    description: "Staging model for users table"
+    columns:
+      - name: user_id
+        description: "Primary key of the users"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_venue
+    description: "Staging model for venue table"
+    columns:
+      - name: venue_id
+        description: "Primary key of the venue"
+        tests:
+          - not_null
+          - unique
+

@@ -1,0 +1,7 @@
+dbt_modules/
+target/
+dbt_packages/
+*.db
+*.pyc
+*.log
+.env

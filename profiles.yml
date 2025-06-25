@@ -1,0 +1,14 @@
+
+Redshift_datasets:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: redshift-cluster-4.c6tbdiz2ayz2.us-east-1.redshift.amazonaws.com
+      port: 5439
+      dbname: dev
+      schema: public
+      user: awsuser
+      password: Awsuser@123
+      region: us-east-1
+      threads: 4

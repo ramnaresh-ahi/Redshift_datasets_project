@@ -1,0 +1,23 @@
+
+version: 2
+
+sources:
+  - name: public
+    database: dev
+    schema: public
+    tables:
+      - name: category
+        description: "It contains category information"
+      - name: date
+        description: "It contains all important dates"
+      - name: event
+        description: "It contains all events"
+      - name: listing
+        description: "It looks like fact table because it contains some metrics"
+      - name: sales
+        description: "It contains all sales information"
+      - name: users
+        description: "It contains user's information"
+      - name: venue
+        description: "Its contains venue information"
+

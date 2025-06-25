@@ -1,0 +1,38 @@
+
+version: 2
+
+models:
+  - name: event_info
+    description: "This table contains all information regarding events. "
+    columns:
+      - name: event_id
+        description: "Primary key for each event. Should be unique and not null."
+        tests:
+          - not_null
+          - unique
+      - name: time
+        description: "The column shows starting time for each event ->like when event will start."
+      - name: seats
+        description: "This columns shows available seats for each event."
+
+  - name: ticket_info
+    description: "This table contains all information regarding tickets. "
+    columns:
+      - name: event_id
+        description: "Important for events. Should be not null."
+        tests:
+          - not_null
+      - name: list_time
+        description: "The column shows when ticket was sold."
+      
+  - name: revenue_info
+    description: "This table contains all information regarding sales. "
+    columns:
+      - name: sales_id
+        description: "Primary key for each sale. Should be unique and not null."
+        tests:
+          - not_null
+          - unique
+      - name: sale_time
+        description: "The column shows when sale was start."
+      
